@@ -1,0 +1,221 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#f7f7f7;
+  color:#222;
+  line-height:1.6;
+}
+
+header{
+  background:#0b3d91;
+  color:white;
+  padding:12px 0;
+  position:sticky;
+  top:0;
+  z-index:999;
+}
+
+.container{
+  width:90%;
+  max-width:1100px;
+  margin:auto;
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:18px;
+  font-weight:bold;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:15px;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  font-size:14px;
+}
+
+nav ul li a:hover{
+  text-decoration:underline;
+}
+
+.hero{
+  background:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+  url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1400&q=80");
+  background-size:cover;
+  background-position:center;
+  color:white;
+  padding:70px 0;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.hero p{
+  font-size:16px;
+  margin-bottom:20px;
+}
+
+.btn{
+  display:inline-block;
+  padding:10px 18px;
+  background:#ff9800;
+  color:#111;
+  text-decoration:none;
+  border-radius:6px;
+  margin:6px;
+  font-weight:700;
+}
+
+.btn:hover{
+  background:#ffc107;
+}
+
+.section{
+  padding:50px 0;
+}
+
+.section h2{
+  text-align:center;
+  margin-bottom:25px;
+  color:#0b3d91;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+  gap:18px;
+}
+
+.card{
+  background:white;
+  padding:18px;
+  border-radius:10px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.12);
+  text-align:center;
+}
+
+.card h3{
+  margin:10px 0;
+  color:#111;
+}
+
+.list{
+  background:white;
+  padding:18px;
+  border-radius:10px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.12);
+}
+
+.list ul{
+  padding-left:18px;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+  gap:12px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:10px;
+  height:180px;
+  object-fit:cover;
+}
+
+footer{
+  background:#0b3d91;
+  color:white;
+  padding:20px 0;
+  text-align:center;
+  margin-top:30px;
+}
+
+.form{
+  background:white;
+  padding:18px;
+  border-radius:10px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.12);
+  max-width:600px;
+  margin:auto;
+}
+
+.form input, .form textarea, .form select{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+  border:1px solid #ccc;
+  border-radius:6px;
+}
+
+.form button{
+  width:100%;
+  border:none;
+  padding:12px;
+  background:#ff9800;
+  font-weight:800;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.form button:hover{
+  background:#ffc107;
+}
+
+.floating{
+  position:fixed;
+  right:15px;
+  bottom:15px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  z-index:999;
+}
+
+.floating a{
+  padding:12px 14px;
+  border-radius:50px;
+  text-decoration:none;
+  color:white;
+  font-weight:700;
+  text-align:center;
+  box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+.call{
+  background:#28a745;
+}
+
+.whatsapp{
+  background:#25d366;
+}
+
+@media(max-width:768px){
+  nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+  }
+  .hero h1{
+    font-size:24px;
+  }
+}
